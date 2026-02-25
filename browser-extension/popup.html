@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Capture Inbox Item</title>
+    <link rel="stylesheet" href="./popup.css" />
+  </head>
+  <body>
+    <main class="card">
+      <h1>Capture</h1>
+      <p class="meta" id="pageMeta">Loading current tab...</p>
+      <label>
+        Note (required)
+        <textarea id="note" rows="3" placeholder="Why is this worth keeping?"></textarea>
+      </label>
+      <label>
+        Tags (optional, comma separated)
+        <input id="tags" type="text" placeholder="narrative, hook" />
+      </label>
+      <label>
+        Source
+        <select id="source">
+          <option value="xhs">xhs</option>
+          <option value="douyin">douyin</option>
+          <option value="x">x</option>
+          <option value="wechat">wechat</option>
+          <option value="other" selected>other</option>
+        </select>
+      </label>
+      <div class="actions">
+        <button id="submitBtn" type="button">Save to Inbox</button>
+        <button id="copyBtn" type="button" class="secondary" hidden>Copy JSON</button>
+      </div>
+      <p id="status" class="status"></p>
+    </main>
+    <script src="./popup.js"></script>
+  </body>
+</html>

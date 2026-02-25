@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inbox Capture Options</title>
+    <style>
+      body { font-family: "Segoe UI", sans-serif; margin: 24px; max-width: 720px; }
+      label { display: block; margin: 12px 0; font-size: 14px; font-weight: 600; }
+      input { width: 100%; padding: 8px; border: 1px solid #c7d0da; border-radius: 8px; margin-top: 4px; }
+      button { margin-top: 12px; padding: 8px 12px; border: none; border-radius: 8px; background: #0d6efd; color: #fff; cursor: pointer; }
+      #status { margin-top: 12px; font-size: 13px; }
+    </style>
+  </head>
+  <body>
+    <h1>Inbox Capture Options</h1>
+    <label>
+      API Base URL
+      <input id="apiBaseUrl" type="text" placeholder="http://127.0.0.1:17832" />
+    </label>
+    <label>
+      Inbox Token
+      <input id="inboxToken" type="password" placeholder="same as INBOX_TOKEN" />
+    </label>
+    <button id="saveBtn" type="button">Save</button>
+    <p id="status"></p>
+    <script src="./options.js"></script>
+  </body>
+</html>
