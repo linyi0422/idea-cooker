@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Content Agent
 
 Local-first capture + inspiration generator for creators.
@@ -92,3 +93,6 @@ npm test
 ## License
 
 MIT. See [LICENSE](./LICENSE).
+=======
+# idea-cooker
+>>>>>>> 384f143dadbf466f112797136308d0fd91509c84
